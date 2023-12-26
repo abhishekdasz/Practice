@@ -1,8 +1,10 @@
+// Node class represents a single node in the linked list
 class Node 
 {
     String data;
     Node next;
 
+    // Constructor to create a new node with given data
     Node(String data)
     {
         this.data = data;
@@ -12,6 +14,8 @@ class Node
 class Linkedlist 
 {
     Node head;
+    
+    // Constructor to initialize an empty linked list
     Linkedlist()
     {
         this.head = null;
