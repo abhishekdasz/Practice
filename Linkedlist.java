@@ -76,6 +76,12 @@ class Linkedlist
         li.insertFromFirst("World");
         li.insertFromFirst("Hello");
 
+        li.insertFromLast("This");
+        li.insertFromLast("is");
+        li.insertFromLast("Abhishek");
+
+        li.insertFromFirst("Hi,");
+
         System.out.println("Linkedlist: ");
         li.printList();
     }
