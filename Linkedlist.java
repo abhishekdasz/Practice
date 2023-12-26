@@ -14,7 +14,7 @@ class Node
 class Linkedlist 
 {
     Node head;
-    
+
     // Constructor to initialize an empty linked list
     Linkedlist()
     {
@@ -25,12 +25,15 @@ class Linkedlist
     {
         Node newNode = new Node(data);
 
+        // If the linked list is empty, set the new node as the head
         if(head == null)
         {
             head = newNode;
             return;
         }
+        // Set the next of the new node to the current head
         newNode.next = head;
+        // Set the new node as the new head
         head = newNode;
     }
 
