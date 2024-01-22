@@ -74,6 +74,25 @@ class Linkedlist
         }
         System.out.println("NULL");
     }
+
+    void deleteFirst()
+    {
+        if(head == null)
+        {
+            System.out.println("List is empty");
+            return;
+        }
+        head = head.next;
+    }
+
+    void deleteLast()
+    {
+        if(head == null)
+        {
+            System.out.println("List is empty");
+            return;            
+        }
+    }
     public static void main(String args[])
     {
         System.out.println("Hello World");
@@ -90,6 +109,10 @@ class Linkedlist
         li.insertFromFirst("Hi,");
 
         System.out.println("Linkedlist: ");
+        li.printList();
+
+        li.deleteFirst();
+
         li.printList();
     }
 }
